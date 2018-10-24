@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
-import { Redirect } from 'dva/router';
+
 import ScrollAnim from 'rc-scroll-anim';
 const Link = ScrollAnim.Link;
 const Item = Menu.Item;
@@ -27,10 +27,10 @@ class Header extends React.Component {
     delete props.isMobile;
     const navData = { menu1: '导航一', menu2: '导航二', menu3: '导航三', menu4: '导航四' };;
     const navChildren = Object.keys(navData)
-      .map((key, i) => {
-        let path = `content_${i}_0`;
-        return (<Item key={i}><Link to={path}>{navData[key]}</Link></Item>);
-      });
+    .map((key, i) => {
+      let path = `content_${i}_0`;
+      return (<Item key={i}><Link to={path}>{navData[key]}</Link></Item>);
+    });
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}

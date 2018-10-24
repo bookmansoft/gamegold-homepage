@@ -3,8 +3,7 @@
   "scripts": {
     "start": "roadhog server",
     "build": "roadhog build",
-    "lint": "eslint --ext .js src test",
-    "precommit": "npm run lint"
+    "lint": "eslint --ext .js src test"
   },
   "engines": {
     "install-node": "6.11.1"
@@ -19,7 +18,8 @@
     "rc-scroll-anim": "2.x",
     "rc-tween-one": "2.x",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-dom": "^15.4.0",
+    "react-sublime-video": "^0.2.5"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

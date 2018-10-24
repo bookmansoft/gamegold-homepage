@@ -1,103 +1,91 @@
 @import './custom.less';
 
-@banner0: banner0;
-.@{banner0} {
-  width: 100%;
-  // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  border-color: #666;
-  &:before {
-    background-image: url("https://zos.alipayobjects.com/rmsportal/gGlUMYGEIvjDOOw.jpg");
-    background-size: cover;
-    // background-attachment: fixed;
-    background-position: center;
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+@content0: content0;
+
+.@{content0} {
+  &-img {
     height: 100%;
-    content: '';
-    z-index: -1;
-  }
-  &-wrapper {
-    display: inline-block;
+    width: 40%;
+    overflow: hidden;
     position: absolute;
-    top: 20%;
-    margin: auto;
     left: 0;
-    right: 0;
-    font-size: 14px;
-    color: @template-text-color-light;
-    width: 550px;
-    .queue-anim-leaving {
-      position: relative !important;
-      width: auto;
-    }
-    .title {
-      width: 350px;
-      left: 30px;
-      margin: auto;
+    span {
       display: inline-block;
-      font-size: 40px;
-      position: relative;
-    }
-    h1 {
-      margin: 10px auto;
-    }
-    p {
-      margin-bottom: 20px;
-      word-wrap: break-word;
-    }
-    button {
-      border: 1px solid #fff;
-      color: #fff;
-      background: transparent;
-      box-shadow: 0 0 0 transparent;
-      transition: background .45s @ease-out, box-shadow .45s @ease-out;
-      line-height: 36px;
-      font-size: 16px;
-      height: 36px;
-      span {
-        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        transition: text-shadow .45s @ease-out;
-      }
-      &:hover {
-        color: #fff;
-        border-color: #fff;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
-        & span {
-          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
-        }
+      position: absolute;
+      width: 55%;
+      right: 10%;
+      line-height: 50vh;
+      height: 50vh;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      img {
+        vertical-align: middle;
       }
     }
   }
-  &-icon {
-    bottom: 20px;
-    font-size: 24px;
+  &-text {
+    display: block;
+    width: 55%;
+    height: 150px;
+    vertical-align: top;
     position: absolute;
-    left: 50%;
-    margin-left: -12px;
-    color: @template-text-color-light;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    & p, & h1 {
+      position: relative !important;
+      width: 75%;
+    }
+    & h1 {
+      font-size: 32px;
+      font-weight: normal;
+      color: #404040;
+    }
+    & p {
+      margin-top: 20px;
+    }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .@{banner0} {
-    &-wrapper {
+  .@{content0}-wrapper {
+    height: 400px;
+    .@{content0} {
+      overflow: hidden;
       width: 90%;
-      .title {
-        width: 90%;
-        left: 0;
+      margin: auto;
+      &-img, &-text {
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
       }
-    }
-    &:before {
-      background-attachment: inherit;
+      &-img {
+        height: 200px;
+        margin: 20px auto;
+        span {
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 180px;
+          height: 200px;
+          line-height: 200px;
+        }
+      }
+      &-text {
+        height: 140px;
+        margin-bottom: 20px;
+        p, h1 {
+          width: 100%;
+          top: auto;
+        }
+        h1{
+          margin: 10px auto;
+          font-size: 24px;
+        }
+      }
     }
   }
 }

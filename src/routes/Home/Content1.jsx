@@ -4,8 +4,9 @@ import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
 class Content extends React.Component {
+
   static defaultProps = {
-    className: 'content0',
+    className: 'content1',
   };
 
   render() {
@@ -13,9 +14,9 @@ class Content extends React.Component {
     const isMobile = props.isMobile;
     delete props.isMobile;
     const animType = {
-      queue: isMobile ? 'bottom' : 'right',
+      queue: isMobile ? 'bottom' : 'left',
       one: isMobile ? { y: '+=30', opacity: 0, type: 'from' }
-        : { x: '-=30', opacity: 0, type: 'from' },
+        : { x: '+=30', opacity: 0, type: 'from' },
     };
     return (
       <div
@@ -26,36 +27,36 @@ class Content extends React.Component {
           className={`content-template ${props.className}`}
           location={props.id}
         >
-          <TweenOne
-            key="img"
-            animation={animType.one}
-            className={`${props.className}-img`}
-            id={`${props.id}-imgWrapper`}
-          >
-            <span id={`${props.id}-img`}>
-              <img width="100%" src="https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png" />
-            </span>
-          </TweenOne>
           <QueueAnim
-            className={`${props.className}-text`}
             type={animType.queue}
+            className={`${props.className}-text`}
             key="text"
             leaveReverse
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              企业资源管理
+              分布式中间件
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。
+              金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。
             </p>
           </QueueAnim>
+          <TweenOne
+            key="img"
+            animation={animType.one}
+            className={`${props.className}-img`}
+            id={`${props.id}-imgWrapper`}
+            resetStyle
+          >
+            <span id={`${props.id}-img`}>
+              <img width="100%" src="https://zos.alipayobjects.com/rmsportal/tvQTfCupGUFKSfQ.png" />
+            </span>
+          </TweenOne>
         </OverPack>
       </div>
     );
   }
 }
-
 
 export default Content;

@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Button, Icon } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
@@ -11,63 +11,67 @@ class Content extends React.Component {
       btn: false
     };
   }
+  static defaultProps = {
+    className: 'content0',
+  };
 
   render() {
     if(this.state.btn) {
       window.location.href = 'http://baidu.com';
     }
     const props = { ...this.props };
+    const isMobile = props.isMobile;
     delete props.isMobile;
+    const animType = {
+      queue: isMobile ? 'bottom' : 'right',
+      one: isMobile ? { y: '+=30', opacity: 0, type: 'from' }
+        : { x: '-=30', opacity: 0, type: 'from' },
+    }
     return (
-      <OverPack
-        replay
-        playScale={[0.3, 0.1]}
+      <div
         {...props}
+        className={`content-template-wrapper content-half-wrapper ${props.className}-wrapper`}
       >
-        <QueueAnim
-          type={['bottom', 'top']}
-          delay={200}
-          className={`${props.className}-wrapper`}
-          key="text"
-          id={`${props.id}-wrapper`}
+        <OverPack
+          className={`content-template ${props.className}`}
+          location={props.id}
         >
-          <span
-            className="title"
-            key="title"
-            id={`${props.id}-title`}
+          <TweenOne
+            key="img"
+            animation={animType.one}
+            className={`${props.className}-img`}
+            id={`${props.id}-imgWrapper`}
+            resetStyle
           >
-            <img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />
-          </span>
-          <p
-            key="content"
-            id={`${props.id}-content`}
+            <span id={`${props.id}-img`}>
+              <img width="100%" src="https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png" />
+            </span>
+          </TweenOne>
+          <QueueAnim
+            className={`${props.className}-text`}
+            type={animType.queue}
+            key="text"
+            leaveReverse
+            ease={['easeOutCubic', 'easeInCubic']}
+            id={`${props.id}-textWrapper`}
           >
-            一个高效的页面动画解决方案
-          </p>
-          <Button type="ghost" key="button" id={`${props.id}-button`}  onClick={()=>{
-            this.setState({btn: true});
-          }}>
-            Learn More
-          </Button>
-        </QueueAnim>
-        <TweenOne
-          animation={{ y: '-=20', yoyo: true, repeat: -1, duration: 1000 }}
-          className={`${props.className}-icon`}
-          key="icon"
-        >
-          <Icon type="down" />
-        </TweenOne>
-      </OverPack>
+            <h1 key="h1" id={`${props.id}-title`}>
+              企业资源管理
+            </h1>
+            <p key="p" id={`${props.id}-content`}>
+              云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。
+              <Button type="ghost" key="button" id={`${props.id}-button`}  onClick={()=>{
+                this.setState({btn: true});
+              }}>
+                Learn More
+              </Button>
+            </p>
+          </QueueAnim>
+        </OverPack>
+      </div>
     );
   }
 }
 
-Content.propTypes = {
-  className: PropTypes.string,
-};
-
-Content.defaultProps = {
-  className: 'banner0',
-};
 
 export default Content;
