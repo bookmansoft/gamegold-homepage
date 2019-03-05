@@ -34,7 +34,7 @@ class Content extends React.Component {
             resetStyle
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/shouye1.jpg" />
+              <img width="100%" src="http://www.gamegold.xin/imgs/cpjs3.png" />
             </span>
           </TweenOne>
           <QueueAnim
@@ -46,10 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              降低游戏厂商获客成本
+              区块链浏览器
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              与广泛领域的合作伙伴共建、共享持久、稳定的次生态社群，大幅降低游戏行业获客成本，用创意赚钱而不是用流量赚钱。
+              查阅所有游戏金交易与区块的相关详情，实时同步更新游戏金链所有节点信息。
             </p>
           </QueueAnim>
         </OverPack>

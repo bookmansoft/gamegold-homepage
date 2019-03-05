@@ -28,9 +28,9 @@ class Content extends React.Component {
     const props = { ...this.props };
     delete props.isMobile;
     const dataSource = [
-      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: '一站式业务接入', content: '支付、结算、核算接入产品效率翻四倍' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: '一站式事中风险监控', content: '在所有需求配置环节事前风险控制和质量控制能力' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: '一站式数据运营', content: '沉淀产品接入效率和运营小二工作效率数据' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold钱包APP、小程序', content: '用户的虚拟资产管理终端' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: '企业后台管理中心', content: '帮助企业查看数据、报表，制定精准营销方案' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: '区块链浏览器', content: '提供区块链交易查询服务' },
     ];
     const listChildren = dataSource.map(this.getBlockChildren);
     return (

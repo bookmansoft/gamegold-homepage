@@ -1,19 +1,20 @@
 @import './custom.less';
 
-@content1: content1;
+@content0: content0;
 
-.@{content1} {
+.@{content0} {
   &-img {
     height: 100%;
     width: 40%;
     overflow: hidden;
     position: absolute;
-    right: 0;
+    left: 0;
     span {
-      display: block;
+      display: inline-block;
       position: absolute;
-      width: 55%;
-      left: 10%;
+      // width: 55%;
+      width: 80%;
+      right: 10%;
       line-height: 50vh;
       height: 50vh;
       margin: auto;
@@ -33,10 +34,10 @@
     top: 0;
     bottom: 0;
     margin: auto;
+    right: 0;
     & p, & h1 {
       position: relative !important;
       width: 75%;
-      float: right;
     }
     & h1 {
       font-size: 32px;
@@ -44,15 +45,15 @@
       color: #404040;
     }
     & p {
-      margin-top: 20px;
+      // margin-top: 20px;
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .@{content1}-wrapper {
+  .@{content0}-wrapper {
     height: 400px;
-    .@{content1} {
+    .@{content0} {
       overflow: hidden;
       width: 90%;
       margin: auto;
@@ -63,8 +64,8 @@
         text-align: center;
       }
       &-img {
-        margin: 20px auto;
         height: 200px;
+        margin: 20px auto;
         span {
           right: 0;
           left: 0;
@@ -76,15 +77,13 @@
       }
       &-text {
         height: 140px;
-        margin-top: 20px;
+        margin-bottom: 20px;
         p, h1 {
           width: 100%;
           top: auto;
         }
-        p {
-          margin-top: 20px;
-        }
-        h1 {
+        h1{
+          margin: 10px auto;
           font-size: 24px;
         }
       }

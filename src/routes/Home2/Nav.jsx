@@ -26,7 +26,7 @@ class Header extends React.Component {
     const isMobile = props.isMobile;
     delete props.isMobile;
     // const navData = { menu1: '首页', menu2: '产品', menu3: '行业应用', menu4: '关于我们' };;
-    const navData = [{ menu: '首页',url:'/'}, {menu: '产品介绍',url:'http://www.gamegold.xin/cpjs.html'}, {menu: '行业应用',url:'http://www.gamegold.xin/hyyy.html'}, {menu: '关于我们',url:'http://www.gamegold.xin/gywm.html'} ];;
+    const navData = [{ menu: '首页',url:'http://www.gamegold.xin/index.html'}, {menu: '产品介绍',url:'/'}, {menu: '行业应用',url:'http://www.gamegold.xin/hyyy.html'}, {menu: '关于我们',url:'http://www.gamegold.xin/gywm.html'} ];;
     const navChildren = Object.keys(navData).map((key, i) => {
       // let path =  `content_${i}_0`;
       return (<Item key={i}><a href={navData[key].url}>{navData[key].menu}</a></Item>);
@@ -61,7 +61,7 @@ class Header extends React.Component {
           className={`${this.props.className}-phone-nav-text`}
         >
           <Menu
-            defaultSelectedKeys={['0']}
+            defaultSelectedKeys={['1']}
             mode="inline"
             theme="dark"
           >
@@ -73,7 +73,7 @@ class Header extends React.Component {
         animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
       >
         <Menu
-          mode="horizontal" defaultSelectedKeys={['0']}
+          mode="horizontal" defaultSelectedKeys={['1']}
           id={`${this.props.id}-menu`}
         >
           {navChildren}

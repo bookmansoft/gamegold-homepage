@@ -7,8 +7,6 @@ import Nav from './Nav';
 import Content0 from './Content0';
 import Content1 from './Content1';
 import Content2 from './Content2';
-import Content3 from './Content3';
-import Content4 from './Content4';
 import Footer from './Footer';
 
 import './less/antMotion_style.less';
@@ -47,11 +45,9 @@ export default class Home extends React.Component {
   render() {
     const children = [
       <Nav id="nav_0_0" key="nav_0_0" isMobile={this.state.isMobile}/>,
-      <Content0 id="content_10_0" key="content_10_0" isMobile={this.state.isMobile}/>,
-      <Content1 id="content_2_0" key="content_2_0" isMobile={this.state.isMobile}/>,
-      <Content2 id="content_3_0" key="content_3_0" isMobile={this.state.isMobile}/>,
-      <Content3 id="content_2_1" key="content_2_1" isMobile={this.state.isMobile}/>,
-      <Content4 id="content_9_0" key="content_9_0" isMobile={this.state.isMobile}/>,
+      <Content0 id="content_2_0" key="content_2_0" isMobile={this.state.isMobile}/>,
+      <Content1 id="content_7_0" key="content_7_0" isMobile={this.state.isMobile}/>,
+      <Content2 id="content_2_1" key="content_2_1" isMobile={this.state.isMobile}/>,
       <Footer id="footer_1_0" key="footer_1_0" isMobile={this.state.isMobile}/>,
     ];
     return (

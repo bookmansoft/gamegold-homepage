@@ -1,90 +1,137 @@
 @import './custom.less';
 
-@content0: content0;
-
-.@{content0} {
-  &-img {
+@banner2: banner2;
+.@{banner2} {
+  width: 100%;
+  // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(100vh - 64px);
+  height: calc(~"100vh - 64px");
+  position: relative;
+  border-color: #666;
+  background: #fff;
+  .banner-anim {
     height: 100%;
-    width: 40%;
+  }
+  & .queue-anim-leaving {
+    position: relative !important;
+    width: auto;
+  }
+  .banner-user-elem {
+    height: 100%;
+    color: #fff;
+    position: relative;
     overflow: hidden;
+  }
+
+  .bg {
+    width: 100%;
+    height: 100%;
     position: absolute;
+    top: 0;
     left: 0;
-    span {
-      display: inline-block;
-      position: absolute;
-      width: 55%;
-      right: 10%;
-      line-height: 50vh;
-      height: 50vh;
+    overflow: hidden;
+    background-size: cover;
+  }
+  .bg0 {
+    background: url("http://www.gamegold.xin/imgs/banner07.jpg")  no-repeat;
+    background-size: 100% 100%;
+    // scrollParallax
+    transform: translateY(-100px);
+    height: calc(~"100%");
+    top: -100px;
+    // followParallax
+    width: calc(~"100% + 30px");
+    left: -15px;
+    &:before {
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: fade(#000, 35);
+      display: block;
+    }
+  }
+  .banner-user-elem .banner-user-title {
+    font-size: 22px;
+    top: 40%;
+  }
+  .banner-user-elem .banner-user-text {
+    top: 40%;
+  }
+  &-title {
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    font-size: 14px;
+    color: @template-text-color-light;
+    width: 400px;
+    text-align: left;
+    padding: 20px;
+    & .logo {
+      width: 350px;
+      left: 0;
       margin: auto;
-      top: 0;
-      bottom: 0;
-      img {
-        vertical-align: middle;
+      display: inline-block;
+      position: relative;
+      font-size: 56px;
+    }
+    & p {
+      word-wrap: break-word;
+      margin: auto auto 20px auto;
+      font-weight: lighter;
+    }
+    & button {
+      border: 1px solid #fff;
+      color: #fff;
+      background: transparent;
+      transition: background .45s @ease-in, border .45s @ease-in;
+      line-height: 36px;
+      font-size: 16px;
+      height: 36px;
+      & span {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        transition: text-shadow .45s @ease-out;
+      }
+      &:hover {
+        color: #fff;
+        border-color: @primary-color;
+        background: @primary-color;
+        transition: background .45s @ease-out, border .45s @ease-out;
+        & span {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+        }
       }
     }
   }
-  &-text {
-    display: block;
-    width: 55%;
-    height: 150px;
-    vertical-align: top;
+  &-icon {
+    bottom: 20px;
+    font-size: 24px;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    right: 0;
-    & p, & h1 {
-      position: relative !important;
-      width: 75%;
-    }
-    & h1 {
-      font-size: 32px;
-      font-weight: normal;
-      color: #404040;
-    }
-    & p {
-      margin-top: 20px;
-    }
+    z-index: 10;
+    left: 50%;
+    margin-left: -12px;
+    color: @template-text-color-light;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .@{content0}-wrapper {
-    height: 400px;
-    .@{content0} {
-      overflow: hidden;
+.banner-anim-thumb-default span {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .5);
+}
+
+@media screen and (max-width: 414px) {
+  .@{banner2} {
+    &-title {
       width: 90%;
+      left: 0;
       margin: auto;
-      &-img, &-text {
-        width: 100%;
-        display: block;
-        position: relative;
-        text-align: center;
-      }
-      &-img {
-        height: 200px;
-        margin: 20px auto;
-        span {
-          right: 0;
-          left: 0;
-          margin: auto;
-          width: 180px;
-          height: 200px;
-          line-height: 200px;
-        }
-      }
-      &-text {
-        height: 140px;
-        margin-bottom: 20px;
-        p, h1 {
-          width: 100%;
-          top: auto;
-        }
-        h1{
-          margin: 10px auto;
-          font-size: 24px;
-        }
+      padding: 0;
+      text-align: center;
+      display: block;
+      .logo {
+        width: 90%;
+        left: 0;
       }
     }
   }

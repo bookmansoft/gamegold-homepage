@@ -32,9 +32,9 @@ class Content extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     const dataSource = [
-      { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '技术', content: '丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '融合', content: '解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。\n解放业务及技术生产力，推动金融服务底层创新。' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '开发', content: '符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '道具上链与投放', content: '企业可在后台管理系统中操作道具的生成、投放、赠送、发布售卖等，利用道具的流转获取更多的客源。' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '数据统计与分析', content: '在后台管理系统中能轻松筛查运营数据，便于企业对生态中的用户进行精准营销，节约营销成本，提高效率。' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '用户管理', content: '查看用户使用产品情况，便于制定更合理的营销方案' },
     ];
     const ulChildren = dataSource.map(this.getBlockChildren);
     delete props.isMobile;
@@ -59,13 +59,13 @@ class Content extends React.Component {
               key="h1"
               id={`${props.id}-title`}
             >
-              蚂蚁金融云提供专业的服务
+              企业管理后台
             </h1>
             <p
               key="p"
               id={`${props.id}-content`}
             >
-              基于阿里云计算强大的基础资源
+              合作企业管理业务的强大帮手
             </p>
             <QueueAnim
               component="ul"
@@ -83,7 +83,7 @@ class Content extends React.Component {
             id={`${props.id}-img`}
             resetStyle
           >
-            <img width="100%" src="https://zos.alipayobjects.com/rmsportal/VHGOVdYyBwuyqCx.png" />
+            <img width="100%" src="http://www.gamegold.xin/imgs/cpjs2.png" />
           </TweenOne>
         </OverPack>
       </div>

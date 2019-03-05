@@ -1,108 +1,62 @@
-import React, { PropTypes } from 'react';
-import { Button, Icon } from 'antd';
+import React from 'react';
 import QueueAnim from 'rc-queue-anim';
-import TweenOne, { TweenOneGroup } from 'rc-tween-one';
-import BannerAnim, { Element } from 'rc-banner-anim';
-import 'rc-banner-anim/assets/index.css';
+import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
-const BgElement = Element.BgElement;
-class Banner extends React.Component {
+class Content extends React.Component {
+  static defaultProps = {
+    className: 'content0',
+  };
+
   render() {
     const props = { ...this.props };
+    const isMobile = props.isMobile;
     delete props.isMobile;
-    const childrenData = [
-      {
-        title: '<img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-        content: '一个高效的页面动画解决方案',
-        button: 'Learn More',
-      },
-      {
-        title: '<img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-        content: '一个高效的页面动画解决方案',
-        button: 'Learn More',
-      }
-    ];
-    const childrenToRender = childrenData.map((item, i) => {
-      const title = item.title;
-      const content = item.content;
-      const button = item.button;
-      return (<Element
-        key={i}
-        prefixCls="banner-user-elem"
-      >
-        <BgElement
-          className={`bg bg${i}`}
-          key="bg"
-        />
-        <QueueAnim
-          type={['bottom', 'top']} delay={200}
-          className={`${props.className}-title`}
-          key="text"
-          id={`${props.id}-wrapperBlock${i}`}
-        >
-          <span
-            className="logo"
-            key="logo"
-            id={`${props.id}-titleBlock${i}`}
-            dangerouslySetInnerHTML={{
-              __html: title,
-            }}
-          />
-          <p
-            key="content"
-            id={`${props.id}-contentBlock${i}`}
-          >
-            {content}
-          </p>
-          <Button
-            type="ghost"
-            key="button"
-            id={`${props.id}-buttonBlock${i}`}
-          >
-            {button}
-          </Button>
-        </QueueAnim>
-      </Element>);
-    });
+    const animType = {
+      queue: isMobile ? 'bottom' : 'right',
+      one: isMobile ? { y: '+=30', opacity: 0, type: 'from' }
+        : { x: '-=30', opacity: 0, type: 'from' },
+    }
     return (
-      <OverPack
+      <div
         {...props}
+        className={`content-template-wrapper content-half-wrapper ${props.className}-wrapper`}
       >
-        <TweenOneGroup
-          key="banner"
-          enter={{ opacity: 0, type: 'from' }}
-          leave={{ opacity: 0 }}
-          component=""
+        <OverPack
+          className={`content-template ${props.className}`}
+          location={props.id}
         >
-          <div className={`${props.className}-wrapper`}>
-            <BannerAnim
-              key="banner"
-            >
-              {childrenToRender}
-            </BannerAnim>
-          </div>
-        </TweenOneGroup>
-        <TweenOne
-          animation={{ y: '-=20', yoyo: true, repeat: -1, duration: 1000 }}
-          className={`${props.className}-icon`}
-          style={{ bottom: 40 }}
-          key="icon"
-        >
-          <Icon type="down" />
-        </TweenOne>
-      </OverPack>
+          <TweenOne
+            key="img"
+            animation={animType.one}
+            className={`${props.className}-img`}
+            id={`${props.id}-imgWrapper`}
+            resetStyle
+          >
+            <span id={`${props.id}-img`}>
+              <img width="100%" src="http://www.gamegold.xin/imgs/shouye3.jpg" />
+            </span>
+          </TweenOne>
+          <QueueAnim
+            className={`${props.className}-text`}
+            type={animType.queue}
+            key="text"
+            leaveReverse
+            ease={['easeOutCubic', 'easeInCubic']}
+            id={`${props.id}-textWrapper`}
+          >
+            <h1 key="h1" id={`${props.id}-title`}>
+              开放的区块链应用解决方案赋能传统行业
+            </h1>
+            <p key="p" id={`${props.id}-content`}>
+              百谷王为传统行业提供一站式区块链应用解决方案，通过区块链技术为传统产业赋能，带动游戏、动漫、图书、人力资源等产业结构优化，助力区域经济转型、产业升级。
+            </p>
+          </QueueAnim>
+        </OverPack>
+      </div>
     );
   }
 }
 
-Banner.propTypes = {
-  className: PropTypes.string,
-};
 
-Banner.defaultProps = {
-  className: 'banner1',
-};
-
-export default Banner;
-
+export default Content;
