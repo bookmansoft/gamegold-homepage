@@ -26,7 +26,7 @@ class Header extends React.Component {
     const isMobile = props.isMobile;
     delete props.isMobile;
     // const navData = { menu1: 'home page', menu2: 'product', menu3: '行业应用', menu4: 'About us' };;
-    const navData = [{ menu: 'home pag',url:'/#/En'}, {menu: 'Product',url:'/#/En2'}, {menu: 'Industry',url:'/#/En3'}, {menu: 'About',url:'/#/En4'},{menu:'简体中文',ul:'/#/'}, {menu: '繁體中文',url:'/#/Tw'} ];
+    const navData = [{ menu: 'home pag',url:'/#/En'}, {menu: 'Product',url:'/#/En2'}, {menu: 'Industry',url:'/#/En3'}, {menu: 'About',url:'/#/En4'},{menu:'简体中文',url:'/#/'}, {menu: '繁體中文',url:'/#/Tw'} ];
     const navChildren = Object.keys(navData).map((key, i) => {
       // let path =  `content_${i}_0`;
       return (<Item key={i}><a href={navData[key].url}>{navData[key].menu}</a></Item>);
