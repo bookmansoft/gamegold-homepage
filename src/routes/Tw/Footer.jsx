@@ -40,8 +40,8 @@ class Footer extends React.Component {
     delete props.isMobile;
     const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: '福州百穀王網絡科技有限公司' };
     const dataSource = [
-      { title: '產品', content: '產品介紹\n\n', contentLink: 'http://www.gamegold.xin/cpjs.html#/' },
-      { title: '關於', content: '聯繫我們', contentLink: 'http://www.gamegold.xin/gywm.html#/' },
+      { title: '產品', content: '產品介紹\n\n', contentLink: '/#/Tw2' },
+      { title: '關於', content: '聯繫我們', contentLink: '/#/Tw4' },
       { title: '資源;', content: 'App下載\n程式碼倉庫\n區塊瀏覽器', contentLink: '#\nhttps://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
       { title: '關注', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
     ];
