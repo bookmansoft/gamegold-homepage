@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
@@ -46,11 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              Gamegold钱包 APP、小程序
+              Gamegold wallet app、Small program
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              客户端为用户提供数字资产管理功能，用户可以进行链上道具管理（赠送、买卖、熔铸、竞拍）、Gamegold管理，参与游戏众筹；同时可对喜爱的游戏进行点评，查看游戏榜单，参与游戏社区讨论等。
-            </p>
+              Client provides users with digital asset management function. Users can manage props on the chain (gifts, sales, casting, bidding), Gamegold management, and participate in the game crowdsourcing. At the same time, they can comment on the favorite games, view the game list, participate in the game community discussion and so on.</p>
           </QueueAnim>
         </OverPack>
       </div>

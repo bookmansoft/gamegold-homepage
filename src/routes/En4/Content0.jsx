@@ -69,18 +69,18 @@ class Content extends React.Component {
     delete props.isMobile;
     const childrenData = [
       {
-        tag: { tag: '公司简介', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
+        tag: { tag: 'Company profile', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
         img: <img width="100%" src="http://www.gamegold.xin/imgs/lxwm1.png" />,
-        text: `福州百谷王网络科技有限公司（以下简称百谷王科技）成立于2018年，是一家初创企业，注册资金1000万元人民币。
+        text: `Fuzhou Baiguwang Network Technology Co., Ltd. (hereinafter referred to as Baiguwang Technology) was founded in 2018, is a start-up enterprise, registered capital of 10 million yuan.
         <h3></h3>
-公司成立以来崇尚知识、尊重人才，汇聚了大量业内精英，核心成员均来自上市游戏公司高管团队，公司专注于区块链底层技术，我们的优势是，首先对游戏行业有很深刻的理解，并且针对游戏行业痛点有着成熟的解决方案，其次我们拥有自主研发的底层公链结构，并且是针对游戏行业量身定做的。
-百谷王科技旗下的游戏金公链是以区块链为底层技术、深度结合游戏行业特定需求而量身定制的开放式游戏生态平台和虚拟道具管理解决方案。
-2018年全球游戏销售收入已突破1400亿美金，游戏虚拟资产存量管理是一个超万亿人民币的巨大市场，百谷王科技是游戏虚拟资产管理的先行者，并力争在两年内成为该领域的领导厂商。`,
+        Since its establishment, the company advocates knowledge and respects talents, gathers a large number of elites in the industry. The core members are from the top management team of listed game companies. The company focuses on the bottom technology of the block chain. Our advantage is that first, we have a deep understanding of the game industry, and have mature solutions for the pain points of the game industry. Secondly, we have a bottom public chain structure developed independently. And it's tailored to the game industry.
+        Baiguwang Technology's Game Golden Gold Chain is an open game ecological platform and virtual prop management solution tailored to the specific needs of the game industry with block chains as the underlying technology.
+        Global game sales revenue in 2018 has exceeded $140 billion. Game virtual asset stock management is a huge market of over trillion RMB. Baiguwang Technology is the pioneer of game virtual asset management, and strives to become a leading manufacturer in this field within two years.`,
       },
       {
-        tag: { tag: '联系我们', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
+        tag: { tag: 'Contact us', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
         img: <img width="100%" src="http://www.gamegold.xin/imgs/lxwm2.jpg" />,
-        text: `<h3>公司地址：福州市鼓楼区五一北路1号力宝天马广场23楼</h3><h3>电话：0591-87553093</h3><h3>邮箱：2257032171@qq.com</h3><h3>公众号：</h3><img class="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
+        text: `<h3>Company Address: 23rd Floor, Libao Tianma Square, No. 1 Wuyi North Road, Gulou District, Fuzhou City</h3><h3>Telephone：0591-87553093</h3><h3>Email：2257032171@qq.com</h3><h3>WeChat Subscription：</h3><img class="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
       }
     ];
     const tabsChildren = childrenData.map(this.getBlockChildren);
@@ -100,7 +100,7 @@ class Content extends React.Component {
             reverseDelay={200}
             id={`${props.id}-title`}
           >
-            Gamegold游戏金链
+            Gamegold Chain
           </TweenOne>
           <TweenOne
             animation={{ y: '+=30', opacity: 0, type: 'from', delay: 100 }}
@@ -109,7 +109,7 @@ class Content extends React.Component {
             reverseDelay={100}
             id={`${props.id}-content`}
           >
-            数字资产管家
+            Digital Asset Steward
           </TweenOne>
           <TweenOne.TweenOneGroup
             key="tabs"

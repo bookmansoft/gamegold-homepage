@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import PropTypes from 'prop-types';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
@@ -28,9 +28,9 @@ class Content extends React.Component {
     const props = { ...this.props };
     delete props.isMobile;
     const dataSource = [
-      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold钱包APP、小程序', content: '用户的虚拟资产管理终端' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: '企业后台管理中心', content: '帮助企业查看数据、报表，制定精准营销方案' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: '区块链浏览器', content: '提供区块链交易查询服务' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold錢包App'、'小程式', content: '用戶的虛擬資產管理終端' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: '企業後臺管理中心', content: '幫助企業查看數據、報表，製定精准行銷方案' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: '區塊鏈瀏覽器', content: '提供區塊鏈交易査詢服務' },
     ];
     const listChildren = dataSource.map(this.getBlockChildren);
     return (
@@ -49,8 +49,8 @@ class Content extends React.Component {
             reverseDelay={300}
             id={`${props.id}-title`}
           >
-            产品与服务
-          </TweenOne>
+           產品與服務
+           </TweenOne>
           <QueueAnim
             component="ul" type="bottom" key="block" leaveReverse
             id={`${props.id}-contentWrapper`}

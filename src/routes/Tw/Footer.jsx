@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
@@ -38,12 +38,12 @@ class Footer extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     delete props.isMobile;
-    const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: '福州百谷王网络科技有限公司' };
+    const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: '福州百穀王網絡科技有限公司' };
     const dataSource = [
-      { title: '产品', content: '产品介绍\n\n', contentLink: '/#/Home2' },
-      { title: '关于', content: '联系我们', contentLink: '/#/Home4' },
-      { title: '资源', content: 'App下载\n代码仓库\n区块浏览器', contentLink: '#\nhttps://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
-      { title: '关注', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
+      { title: '產品', content: '產品介紹\n\n', contentLink: 'http://www.gamegold.xin/cpjs.html#/' },
+      { title: '關於', content: '聯繫我們', contentLink: 'http://www.gamegold.xin/gywm.html#/' },
+      { title: '資源;', content: 'App下載\n程式碼倉庫\n區塊瀏覽器', contentLink: '#\nhttps://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
+      { title: '關注', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
     return (<OverPack

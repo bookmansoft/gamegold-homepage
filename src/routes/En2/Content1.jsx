@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
@@ -32,9 +32,9 @@ class Content extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     const dataSource = [
-      { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '道具上链与投放', content: '企业可在后台管理系统中操作道具的生成、投放、赠送、发布售卖等，利用道具的流转获取更多的客源。' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '数据统计与分析', content: '在后台管理系统中能轻松筛查运营数据，便于企业对生态中的用户进行精准营销，节约营销成本，提高效率。' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '用户管理', content: '查看用户使用产品情况，便于制定更合理的营销方案' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: 'Projects Uplink and Delivery', content: 'Enterprises can operate props generation, delivery, gift, release and sale in the background management system, and use the circulation of props to obtain more customers.' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: 'Data statistics and analysis', content: 'In the background management system, the operation data can be easily screened, so that enterprises can carry out accurate marketing to users in the ecosystem, save marketing costs and improve efficiency.' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: 'user management', content: 'View the user's use of the product to facilitate the formulation of a more reasonable marketing plan' },
     ];
     const ulChildren = dataSource.map(this.getBlockChildren);
     delete props.isMobile;
@@ -59,13 +59,13 @@ class Content extends React.Component {
               key="h1"
               id={`${props.id}-title`}
             >
-              企业管理后台
+              Business Management Background
             </h1>
             <p
               key="p"
               id={`${props.id}-content`}
             >
-              合作企业管理业务的强大帮手
+              A Strong Helper for Cooperative Enterprise Management Business
             </p>
             <QueueAnim
               component="ul"

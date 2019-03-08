@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
@@ -46,10 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              区块链浏览器
+              Block Chain Browser
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              查阅所有游戏金交易与区块的相关详情，实时同步更新游戏金链所有节点信息。
+              Check the details of all game gold transactions and blocks, and update the information of all game gold chain nodes in real time synchronously.
             </p>
           </QueueAnim>
         </OverPack>

@@ -16,12 +16,12 @@ class Content extends React.Component {
     delete props.isMobile;
     const oneAnim = { y: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' };
     const blockArray = [
-      { icon: 'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png', title: '数字资产管理', content: '为用户提供道具上链、数字资产去中心化交易等功能' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '游戏众筹', content: '为厂商提供急需的启动资金，让用户分享创造力经济' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '网络游戏', content: '数以千计的游戏开发商，合力打造千姿百态的二次元世界' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '商家积分系统', content: '为广大的商户提供一个通存通兑的积分平台' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png', title: '闲置物品流转', content: '构建一个去中心化的价值转移网络，闲置物品真正利用起来，节约社会资源' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png', title: '其他应用', content: '我们提供基于区块链技术的一站式服务，更多应用场景，等你一起来开发' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png', title: 'Digital Asset Management', content: 'Provide users with the functions of props up-chain, digital assets de-centralized transaction, etc.' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: 'Game crowd raising', content: 'Providing urgently needed start-up funds for manufacturers to enable users to share the creative economy' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: 'Network game', content: 'Thousands of game developers work together to create a multifarious dualistic world' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: 'Business Integral System', content: 'Providing an integral platform for deposit and currency for the vast number of merchants' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png', title: 'Circulation of idle goods', content: 'Constructing a de-centralized value transfer network, making use of idle goods and saving social resources' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png', title: 'Other applications', content: 'We provide one-stop service based on block chain technology, more application scenarios, and so on.' },
     ];
     const children = blockArray.map((item, i) => {
       const id = `block${i}`;
@@ -64,7 +64,7 @@ class Content extends React.Component {
             id={`${props.id}-title`}
             reverseDelay={100}
           >
-             Gamegold游戏金链行业应用
+             Gamegold Chain Industry Application
           </TweenOne>
           <TweenOne
             key="p"
@@ -72,7 +72,7 @@ class Content extends React.Component {
             component="p"
             id={`${props.id}-titleContent`}
           >
-            基于区块链的强大生态网络
+            Strong Ecological Network Based on Block Chain
           </TweenOne>
           <QueueAnim
             key="ul"

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
@@ -46,11 +46,11 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              降低游戏厂商获客成本
-            </h1>
+             降低遊戲廠商獲客成本
+              </h1>
             <p key="p" id={`${props.id}-content`}>
-              与广泛领域的合作伙伴共建、共享持久、稳定的次生态社群，大幅降低游戏行业获客成本，用创意赚钱而不是用流量赚钱。
-            </p>
+              與廣泛領域的合作夥伴共建、共亯持久、穩定的次生態社群，大幅降低遊戲行業獲客成本，用創意賺錢而不是用流量賺錢。
+              </p>
           </QueueAnim>
         </OverPack>
       </div>

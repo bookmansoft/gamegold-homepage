@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Icon } from 'antd';
 import QueueAnim from 'rc-queue-anim';
@@ -54,20 +54,21 @@ class Banner2 extends React.Component {
             key="logo"
             id={`${props.id}-titleBlock0`}
           >
-            游戏金链
+            game gold chain
           </span>
         <p
           key="content"
           id={`${props.id}-contentBlock0`}
         >
-          作为价值互联网的倡导者和建设者，百谷王推出Gamegold游戏金公链平台，直击行业痛点，赋能动漫游戏产业，与友商共建通证经济。
+          As an advocate and builder of the value internet, Baiguwang launched the Golden Chain Platform of Game, directly attacking the pain points of the industry, enabling the animation and game industry, and building a passport economy with friends and businessmen.
         </p>
         <Button
           type="ghost"
           key="button"
           id={`${props.id}-buttonBlock0`}
         >
-          <a href="http://www.gamegold.xin/cpjs.html">产品介绍</a> 
+          <a href="http://www.gamegold.xin/cpjs.html">  Product introduction
+          </a> 
         </Button>
       </QueueAnim>
     </Element>);

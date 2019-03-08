@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
@@ -46,10 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              开放的区块链应用解决方案赋能传统行业
+              Open Block Chain Application Solutions Enables Traditional Industries
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              百谷王为传统行业提供一站式区块链应用解决方案，通过区块链技术为传统产业赋能，带动游戏、动漫、图书、人力资源等产业结构优化，助力区域经济转型、产业升级。
+               Baiguwang provides one-stop block chain application solutions for traditional industries, empowers traditional industries through block chain technology, promotes industrial structure optimization of games, animation, books and human resources, and helps regional economic transformation and industrial upgrading.
             </p>
           </QueueAnim>
         </OverPack>
