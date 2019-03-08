@@ -11,6 +11,9 @@ import En3Page from './routes/En3';
 import En4Page from './routes/En4';
 
 import TwPage from './routes/Tw';
+import Tw2Page from './routes/Tw2';
+import Tw3Page from './routes/Tw3';
+import Tw4Page from './routes/Tw4';
 
 function RouterConfig({ history }) {
   return (
@@ -27,6 +30,9 @@ function RouterConfig({ history }) {
         <Route path="/En4" exact component={En4Page} />
 
         <Route path="/Tw" exact component={TwPage} />
+        <Route path="/Tw2" exact component={Tw2Page} />
+        <Route path="/Tw3" exact component={Tw3Page} />
+        <Route path="/Tw4" exact component={Tw4Page} />
       </Switch>
     </Router>
   );

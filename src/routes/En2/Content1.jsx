@@ -34,7 +34,7 @@ class Content extends React.Component {
     const dataSource = [
       { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: 'Projects Uplink and Delivery', content: 'Enterprises can operate props generation, delivery, gift, release and sale in the background management system, and use the circulation of props to obtain more customers.' },
       { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: 'Data statistics and analysis', content: 'In the background management system, the operation data can be easily screened, so that enterprises can carry out accurate marketing to users in the ecosystem, save marketing costs and improve efficiency.' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: 'user management', content: 'View the user's use of the product to facilitate the formulation of a more reasonable marketing plan' },
+      { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: 'user management', content: 'View the user\'s use of the product to facilitate the formulation of a more reasonable marketing plan' },
     ];
     const ulChildren = dataSource.map(this.getBlockChildren);
     delete props.isMobile;

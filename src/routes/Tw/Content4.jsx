@@ -28,7 +28,7 @@ class Content extends React.Component {
     const props = { ...this.props };
     delete props.isMobile;
     const dataSource = [
-      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold錢包App'、'小程式', content: '用戶的虛擬資產管理終端' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold錢包App、小程式', content: '用戶的虛擬資產管理終端' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: '企業後臺管理中心', content: '幫助企業查看數據、報表，製定精准行銷方案' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: '區塊鏈瀏覽器', content: '提供區塊鏈交易査詢服務' },
     ];

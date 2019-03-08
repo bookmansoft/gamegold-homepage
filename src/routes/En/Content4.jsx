@@ -28,7 +28,7 @@ class Content extends React.Component {
     const props = { ...this.props };
     delete props.isMobile;
     const dataSource = [
-      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold wallet app'、'Small program', content: 'User's Virtual Asset Management Terminal' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold wallet app , Small program', content: 'User\'s Virtual Asset Management Terminal' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: 'Enterprise Backstage Management Center', content: 'Help enterprises view data、Report form，Establishing Precision Marketing Scheme' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: 'Block Chain Browser', content: 'Providing Block Chain Transaction Query Service)' },
     ];
