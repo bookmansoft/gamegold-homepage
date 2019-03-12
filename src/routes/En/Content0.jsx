@@ -48,14 +48,11 @@ class Banner2 extends React.Component {
         className={`${props.className}-title`}
         key="text"
         id={`${props.id}-wrapperBlock0`}
-      >
-          <span
+      ><span
             className="logo"
             key="logo"
             id={`${props.id}-titleBlock0`}
-          >
-            game gold chain
-          </span>
+          >Gamegold chain</span>
         <p
           key="content"
           id={`${props.id}-contentBlock0`}
