@@ -40,10 +40,10 @@ class Footer extends React.Component {
     delete props.isMobile;
     const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: 'Fuzhou Baiguwang Network Technology Co., Ltd.' };
     const dataSource = [
-      { title: 'product', content: 'Product introduction\n\n', contentLink: '/#/En2' },
-      { title: 'about', content: 'Contact us', contentLink: '/#/En4' },
+      { title: 'Product', content: 'Product introduction\n\n', contentLink: '/#/En2' },
+      { title: 'About', content: 'Contact us', contentLink: '/#/En4' },
       { title: 'Resources', content: 'App Download\nCode Warehouse\nBlock Chain Browser', contentLink: '#\nhttps://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
-      { title: 'concern', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
+      { title: 'Community', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
     return (<OverPack
