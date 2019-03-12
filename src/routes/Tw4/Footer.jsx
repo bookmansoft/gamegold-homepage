@@ -21,7 +21,7 @@ class Footer extends React.Component {
         const cItem = item.trim();
         const isImg = cItem.match(/\.(jpg|png|svg|bmp|jpeg)$/i);
         return (<li className={isImg ? 'icon' : ''} key={ii}>
-          <a href={links[ii]} target="_blank">
+          <a href={links[ii]} >
             {isImg ? <img src={cItem} width="100%" /> : cItem}
           </a>
         </li>);

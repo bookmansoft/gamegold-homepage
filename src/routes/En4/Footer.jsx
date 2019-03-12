@@ -21,7 +21,7 @@ class Footer extends React.Component {
         const cItem = item.trim();
         const isImg = cItem.match(/\.(jpg|png|svg|bmp|jpeg)$/i);
         return (<li className={isImg ? 'icon' : ''} key={ii}>
-          <a href={links[ii]} target="_blank">
+          <a href={links[ii]} >
             {isImg ? <img src={cItem} width="100%" /> : cItem}
           </a>
         </li>);
@@ -38,7 +38,7 @@ class Footer extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     delete props.isMobile;
-    const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: 'Fuzhou Baiguwang Network Technology Co., Ltd.' };
+    const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: 'VallNet Co., Ltd.' };
     const dataSource = [
       { title: 'Product', content: 'Product introduction\n\n', contentLink: '/#/En2' },
       { title: 'About', content: 'Contact us', contentLink: '/#/En4' },
