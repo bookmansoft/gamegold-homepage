@@ -39,7 +39,12 @@ export default class Home extends React.Component {
     } 
     
   }
-
+  componentWillReceiveProps(nextProps){
+    //当路由切换时
+    if(this.props.location !== nextProps.location){
+        window.scrollTo(0,0);
+    }
+  }
   render() {
     const children = [
       <Nav id="nav_0_0" key="nav_0_0" isMobile={this.state.isMobile}/>,
