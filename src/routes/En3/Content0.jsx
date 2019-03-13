@@ -42,7 +42,7 @@ class Content extends React.Component {
           <img src={item.icon} width="100%" />
         </TweenOne>
         <div className="text">
-          <TweenOne key="h1" animation={childrenAnim} component="h1">
+          <TweenOne key="h1" animation={childrenAnim} component="h2">
             {item.title}
           </TweenOne>
           <TweenOne key="p" animation={{ ...childrenAnim, delay: delay + 200 }} component="p">
@@ -56,23 +56,20 @@ class Content extends React.Component {
         <OverPack
           className={`content-template ${props.className}`}
           location={props.id}
-        >
-          <TweenOne
+        ><TweenOne
             key="h1"
             animation={oneAnim}
             component="h1"
             id={`${props.id}-title`}
             reverseDelay={100}
-          >
-             Gamegold Chain Industry Application
+          >Gamegold Chain Industry Application
           </TweenOne>
           <TweenOne
             key="p"
             animation={{ ...oneAnim, delay: 100 }}
             component="p"
             id={`${props.id}-titleContent`}
-          >
-            Strong Ecological Network Based on Block Chain
+          >Strong Ecological Network Based on Block Chain
           </TweenOne>
           <QueueAnim
             key="ul"
