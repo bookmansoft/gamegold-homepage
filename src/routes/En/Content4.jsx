@@ -18,7 +18,7 @@ class Content extends React.Component {
   getBlockChildren = (item, i) =>(
     <li key={i} id={`${this.props.id}-block${i}`}>
       <div className="icon">
-        <img src={item.icon} width="80%" />
+        <img src={item.icon} width="100%" />
       </div>
       <h3>{item.title}</h3>
       <p>{item.content}</p>

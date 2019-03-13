@@ -50,7 +50,7 @@ class Content extends React.Component {
             resetStyle
           >
             <span id={`${props.id}-img`}>
-              <img width="80%" src="http://www.gamegold.xin/imgs/shouye2.jpg" />
+              <img width="100%" src="http://www.gamegold.xin/imgs/shouye2.jpg" />
             </span>
           </TweenOne>
         </OverPack>
