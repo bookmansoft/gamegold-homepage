@@ -20,7 +20,7 @@ class Content extends React.Component {
       <div className="icon">
         <img src={item.icon} width="100%" />
       </div>
-      <h3>{item.title}</h3>
+      <h4><b>{item.title}</b></h4>
       <p>{item.content}</p>
     </li>);
 
@@ -28,8 +28,8 @@ class Content extends React.Component {
     const props = { ...this.props };
     delete props.isMobile;
     const dataSource = [
-      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold wallet app , Small program', content: 'User\'s Virtual Asset Management Terminal' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: 'Enterprise Backstage Management Center', content: 'Help enterprises view data、Report form，Establishing Precision Marketing Scheme' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Wallet app,Small program', content: 'User\'s Virtual Asset Management Terminal' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: 'Enterprise Management Center', content: 'Help enterprises view data、Report form，Establishing Precision Marketing Scheme' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: 'Block Chain Browser', content: 'Providing Block Chain Transaction Query Service' },
     ];
     const listChildren = dataSource.map(this.getBlockChildren);

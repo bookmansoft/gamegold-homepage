@@ -45,9 +45,9 @@ class Content extends React.Component {
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
-            <h1 key="h1" id={`${props.id}-title`}>
+            <h2 key="h1" id={`${props.id}-title`} style={{marginTop:'-10px',marginBottom:'-5px'}}>
               Block Chain Browser
-            </h1>
+            </h2>
             <p key="p" id={`${props.id}-content`}>
               Check the details of all game gold transactions and blocks, and update the information of all game gold chain nodes in real time synchronously.
             </p>
