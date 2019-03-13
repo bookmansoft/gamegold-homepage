@@ -66,7 +66,7 @@ class Banner2 extends React.Component {
           key="button"
           id={`${props.id}-buttonBlock0`}
         >
-          <a href="http://www.gamegold.xin/cpjs.html">  Product introduction
+          <a href="/#/En2">  Product introduction
           </a> 
         </Button>
       </QueueAnim>

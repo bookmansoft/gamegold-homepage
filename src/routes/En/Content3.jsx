@@ -34,7 +34,7 @@ class Content extends React.Component {
             resetStyle
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/shouye3.jpg" />
+              <img width="80%" src="http://www.gamegold.xin/imgs/shouye3.jpg" />
             </span>
           </TweenOne>
           <QueueAnim
@@ -45,8 +45,8 @@ class Content extends React.Component {
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
-            <h1 key="h1" id={`${props.id}-title`}>
-              Open Block Chain Application Solutions Enables Traditional Industries
+            <h1 key="h1" id={`${props.id}-title`} style={{marginBottom:'-10px'}}>
+              Enables Traditional Industries
             </h1>
             <p key="p" id={`${props.id}-content`}>
                Baiguwang provides one-stop block chain application solutions for traditional industries, empowers traditional industries through block chain technology, promotes industrial structure optimization of games, animation, books and human resources, and helps regional economic transformation and industrial upgrading.

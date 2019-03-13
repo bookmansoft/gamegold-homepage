@@ -18,7 +18,7 @@ class Content extends React.Component {
   getBlockChildren = (item, i) =>(
     <li key={i} id={`${this.props.id}-block${i}`}>
       <div className="icon">
-        <img src={item.icon} width="100%" />
+        <img src={item.icon} width="80%" />
       </div>
       <h3>{item.title}</h3>
       <p>{item.content}</p>
@@ -30,13 +30,14 @@ class Content extends React.Component {
     const dataSource = [
       { icon: 'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png', title: 'Gamegold wallet app , Small program', content: 'User\'s Virtual Asset Management Terminal' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png', title: 'Enterprise Backstage Management Center', content: 'Help enterprises view data、Report form，Establishing Precision Marketing Scheme' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: 'Block Chain Browser', content: 'Providing Block Chain Transaction Query Service)' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png', title: 'Block Chain Browser', content: 'Providing Block Chain Transaction Query Service' },
     ];
     const listChildren = dataSource.map(this.getBlockChildren);
     return (
       <div
         {...props}
         className={`content-template-wrapper ${props.className}-wrapper`}
+        style={{marginBottom:'50px'}}
       >
         <OverPack
           className={`content-template ${props.className}`}
