@@ -50,12 +50,14 @@ class Banner2 extends React.Component {
         id={`${props.id}-wrapperBlock0`}
       ><span
             className="logo"
+            style={{width:'70%',marginTop:'-50px'}}
             key="logo"
             id={`${props.id}-titleBlock0`}
-          >Gamegold chain</span>
+          >GameGold chain</span>
         <p
           key="content"
           id={`${props.id}-contentBlock0`}
+
         >
           As an advocate and builder of the value internet, Baiguwang launched the Golden Chain Platform of Game, directly attacking the pain points of the industry, enabling the animation and game industry, and building a passport economy with friends and businessmen.
         </p>

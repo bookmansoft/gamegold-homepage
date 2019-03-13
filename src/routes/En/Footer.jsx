@@ -52,7 +52,7 @@ class Footer extends React.Component {
     >
       <QueueAnim type="bottom" component="ul" key="ul" leaveReverse id={`${props.id}-ul`}>
         <li key="logo" id={`${props.id}-logo`}>
-          <p className="logo">
+          <p className="logo" style={{marginTop:'-30px'}}>
             <img src={logoContent.img} width="100%" />
           </p>
           <p>{logoContent.content}</p>
@@ -64,6 +64,7 @@ class Footer extends React.Component {
         key="copyright"
         className="copyright"
         id={`${props.id}-content`}
+        style={{marginTop:'30px'}}
       >
         <span>
           Copyright © 2018 The Project by <a href="http://www.gamegold.xin/">Gamegold</a>. All Rights Reserved
