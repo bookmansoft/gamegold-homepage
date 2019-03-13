@@ -53,7 +53,7 @@ class Banner2 extends React.Component {
             style={{width:'70%',marginTop:'-50px'}}
             key="logo"
             id={`${props.id}-titleBlock0`}
-          >GameGold chain</span>
+          >Gamegold chain</span>
         <p
           key="content"
           id={`${props.id}-contentBlock0`}

@@ -57,6 +57,7 @@ class Content extends React.Component {
                 className={`${this.props.className}-text`}
                 id={`${this.props.id}-textBlock${i}`}
                 dangerouslySetInnerHTML={{ __html: text }}
+                style={{marginTop:'-20px'}}
               />
             </div>)}
         </TweenOne.TweenOneGroup>
@@ -72,10 +73,10 @@ class Content extends React.Component {
         tag: { tag: 'Company profile', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
         img: <img width="100%" src="http://www.gamegold.xin/imgs/lxwm1.png" />,
         text: `Fuzhou Baiguwang Network Technology Co., Ltd. (hereinafter referred to as Baiguwang Technology) was founded in 2018, is a start-up enterprise, registered capital of 10 million yuan.
-        <h3></h3>
-        Since its establishment, the company advocates knowledge and respects talents, gathers a large number of elites in the industry. The core members are from the top management team of listed game companies. The company focuses on the bottom technology of the block chain. Our advantage is that first, we have a deep understanding of the game industry, and have mature solutions for the pain points of the game industry. Secondly, we have a bottom public chain structure developed independently. And it's tailored to the game industry.
         Baiguwang Technology's Game Golden Gold Chain is an open game ecological platform and virtual prop management solution tailored to the specific needs of the game industry with block chains as the underlying technology.
         Global game sales revenue in 2018 has exceeded $140 billion. Game virtual asset stock management is a huge market of over trillion RMB. Baiguwang Technology is the pioneer of game virtual asset management, and strives to become a leading manufacturer in this field within two years.`,
+        // Since its establishment, the company advocates knowledge and respects talents, gathers a large number of elites in the industry. The core members are from the top management team of listed game companies. 
+        // The company focuses on the bottom technology of the block chain. Our advantage is that first, we have a deep understanding of the game industry, and have mature solutions for the pain points of the game industry. Secondly, we have a bottom public chain structure developed independently. And it's tailored to the game industry.
       },
       {
         tag: { tag: 'Contact us', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
@@ -100,7 +101,7 @@ class Content extends React.Component {
             reverseDelay={200}
             id={`${props.id}-title`}
           >
-            Gamegold Chain
+            <span style={{marginTop:'-50px'}}>Gamegold Chain</span>
           </TweenOne>
           <TweenOne
             animation={{ y: '+=30', opacity: 0, type: 'from', delay: 100 }}
@@ -117,6 +118,7 @@ class Content extends React.Component {
             leave={{ y: 30, opacity: 0 }}
             className={`${props.className}-tabs`}
             id={`${props.id}-tabs`}
+            style={{marginTop:'-20px',marginBottom:'-20px'}}
           >
             <Tabs key="tabs" onChange={this.onChange} activeKey={`${this.state.show}`}>
               {tabsChildren}
