@@ -38,7 +38,7 @@ class Footer extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     delete props.isMobile;
-    const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: '福州百穀王網絡科技有限公司' };
+    const logoContent = { img: 'http://www.gamegold.xin/imgs/logo_tw.png', content: '福州百穀王網絡科技有限公司' };
     const dataSource = [
       { title: '產品', content: '產品介紹\n\n', contentLink: '/#/Tw2' },
       { title: '關於', content: '聯繫我們', contentLink: '/#/Tw4' },
