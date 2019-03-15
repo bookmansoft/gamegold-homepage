@@ -55,7 +55,6 @@ class Banner2 extends React.Component {
             id={`${props.id}-titleBlock0`}
           >
             遊戲金鏈
-            game gold chain
           </span>
         <p
           key="content"

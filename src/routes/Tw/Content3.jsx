@@ -34,7 +34,7 @@ class Content extends React.Component {
             resetStyle
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/shouye3.jpg" />
+              <img width="100%" src="http://www.gamegold.xin/imgs/daoju_tw.jpg" />
             </span>
           </TweenOne>
           <QueueAnim
