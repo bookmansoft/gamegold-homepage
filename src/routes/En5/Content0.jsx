@@ -62,14 +62,15 @@ class Content extends React.Component {
             component="h1"
             id={`${props.id}-title`}
             reverseDelay={100}
-          >Gamegold Chain Industry Application
+          >CryptoDragon
           </TweenOne>
           <TweenOne
             key="p"
             animation={{ ...oneAnim, delay: 100 }}
             component="p"
             id={`${props.id}-titleContent`}
-          >Strong Ecological Network Based on Block Chain
+          ><div align="center">"CryptoDragons is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoDragons! <br />
+           Each dragon is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed." </div>
           </TweenOne>
           <QueueAnim
             key="ul"
