@@ -136,6 +136,8 @@ class Content extends React.Component {
 <br />           
 <br />          E、皮膚系統
 <br />         戰龍外觀由多個外觀基因共同影響生成。子代會繼承雙親的外觀基因，也有小概率發生基因突變，生成特殊變異外觀。
+<br />
+<br />         <a href="http://atfile.miq.cn/dragons/com.chinacit.btc_dragon.apk" style={{color:'blue',fontSize:'18px'}}>点击此处下载APP</a>
 </span>
                 </td>
                 <td width="10%"></td>
