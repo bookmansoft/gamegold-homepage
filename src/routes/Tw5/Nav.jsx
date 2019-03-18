@@ -26,7 +26,7 @@ class Header extends React.Component {
     const isMobile = props.isMobile;
     delete props.isMobile;
     // const navData = { menu1: '首頁', menu2: '產品', menu3: '行業應用', menu4: '關於我們' };;
-    const navData = [{ menu: '首頁',url:'/#/Tw'}, {menu: '產品介紹',url:'/#/Tw2'}, {menu: '行業應用',url:'/#/Tw3'}, {menu: '關於我們',url:'/#/Tw4'}, {menu: 'English',url:'/#/En'} ];
+    const navData = [{ menu: '首頁',url:'/#/Tw'}, {menu: '產品介紹',url:'/#/Tw2'}, {menu: '行業應用',url:'/#/Tw3'}, {menu: '關於我們',url:'/#/Tw4'}, {menu: '遊戯',url:'/#/Tw5'}, {menu: 'English',url:'/#/En'} ];
     const navChildren = Object.keys(navData).map((key, i) => {
       // let path =  `content_${i}_0`;
       return (<Item key={i}><a href={navData[key].url}>{navData[key].menu}</a></Item>);
@@ -61,7 +61,7 @@ class Header extends React.Component {
           className={`${this.props.className}-phone-nav-text`}
         >
           <Menu
-            defaultSelectedKeys={['2']}
+            defaultSelectedKeys={['4']}
             mode="inline"
             theme="dark"
           >
@@ -73,7 +73,7 @@ class Header extends React.Component {
         animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
       >
         <Menu
-          mode="horizontal" defaultSelectedKeys={['2']}
+          mode="horizontal" defaultSelectedKeys={['4']}
           id={`${this.props.id}-menu`}
         >
           {navChildren}

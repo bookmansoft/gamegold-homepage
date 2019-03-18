@@ -73,7 +73,7 @@ class Header extends React.Component {
         animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
       >
         <Menu
-          mode="horizontal" defaultSelectedKeys={['2']}
+          mode="horizontal" defaultSelectedKeys={['4']}
           id={`${this.props.id}-menu`}
         >
           {navChildren}
