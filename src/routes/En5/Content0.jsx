@@ -138,7 +138,7 @@ class Content extends React.Component {
 <br />E、Skin system
 <br />The appearance of zhanlong is influenced by many appearance genes. The offspring will inherit the appearance genes of both parents, and there is a small probability of genetic mutation, resulting in special appearance variation.
 <br />
-<br />         <a href="http://atfile.miq.cn/dragons/com.chinacit.btc_dragon.apk" style={{color:'blue',fontSize:'18px'}}>click here to download</a>
+<br />         <a href="com.chinacit.btc_dragon.apk" target="_blank" style={{color:'blue',fontSize:'18px'}}>click here to download</a>
 </span>
                 </td>
                 <td width="10%"></td>
