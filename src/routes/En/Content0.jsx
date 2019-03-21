@@ -25,13 +25,13 @@ class Banner2 extends React.Component {
     const isMobile = props.isMobile;
     delete props.isMobile;
     const follow = !isMobile ? {
-        delay: 1000,
-        minMove: 0.1,
-        data: [
-          { id: 'bg$0', value: 15, bgPosition: '50%', type: ['backgroundPositionX'] },
-          { id: `${props.id}-wrapperBlock0`, value: -15, type: 'x' },
-        ],
-      } : null;
+      delay: 1000,
+      minMove: 0.1,
+      data: [
+        { id: 'bg$0', value: 15, bgPosition: '50%', type: ['backgroundPositionX'] },
+        { id: `${props.id}-wrapperBlock0`, value: -15, type: 'x' },
+      ],
+    } : null;
     const childrenToRender = (<Element
       key="0"
       prefixCls="banner-user-elem"
@@ -49,11 +49,11 @@ class Banner2 extends React.Component {
         key="text"
         id={`${props.id}-wrapperBlock0`}
       ><span
-            className="logo"
-            style={{width:'70%',marginTop:'-50px'}}
-            key="logo"
-            id={`${props.id}-titleBlock0`}
-          >Gamegold chain</span>
+        className="logo"
+        style={{ width: '70%', marginTop: '-50px' }}
+        key="logo"
+        id={`${props.id}-titleBlock0`}
+      >Gamegold chain</span>
         <p
           key="content"
           id={`${props.id}-contentBlock0`}
@@ -66,8 +66,8 @@ class Banner2 extends React.Component {
           key="button"
           id={`${props.id}-buttonBlock0`}
         >
-          <a href="/#/En2">  Product introduction
-          </a> 
+          <a href="http://www.gamegold.xin/app/gamegold.apk">  Product download
+          </a>
         </Button>
       </QueueAnim>
     </Element>);

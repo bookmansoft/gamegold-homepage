@@ -25,13 +25,13 @@ class Banner2 extends React.Component {
     const isMobile = props.isMobile;
     delete props.isMobile;
     const follow = !isMobile ? {
-        delay: 1000,
-        minMove: 0.1,
-        data: [
-          { id: 'bg$0', value: 15, bgPosition: '50%', type: ['backgroundPositionX'] },
-          { id: `${props.id}-wrapperBlock0`, value: -15, type: 'x' },
-        ],
-      } : null;
+      delay: 1000,
+      minMove: 0.1,
+      data: [
+        { id: 'bg$0', value: 15, bgPosition: '50%', type: ['backgroundPositionX'] },
+        { id: `${props.id}-wrapperBlock0`, value: -15, type: 'x' },
+      ],
+    } : null;
     const childrenToRender = (<Element
       key="0"
       prefixCls="banner-user-elem"
@@ -49,12 +49,12 @@ class Banner2 extends React.Component {
         key="text"
         id={`${props.id}-wrapperBlock0`}
       >
-          <span
-            className="logo"
-            key="logo"
-            id={`${props.id}-titleBlock0`}
-          >
-            游戏金链
+        <span
+          className="logo"
+          key="logo"
+          id={`${props.id}-titleBlock0`}
+        >
+          游戏金链
           </span>
         <p
           key="content"
@@ -67,7 +67,7 @@ class Banner2 extends React.Component {
           key="button"
           id={`${props.id}-buttonBlock0`}
         >
-          <a href="http://www.gamegold.xin/cpjs.html">产品介绍</a> 
+          <a href="http://www.gamegold.xin/app/gamegold.apk">产品下载</a>
         </Button>
       </QueueAnim>
     </Element>);

@@ -25,13 +25,13 @@ class Banner2 extends React.Component {
     const isMobile = props.isMobile;
     delete props.isMobile;
     const follow = !isMobile ? {
-        delay: 1000,
-        minMove: 0.1,
-        data: [
-          { id: 'bg$0', value: 15, bgPosition: '50%', type: ['backgroundPositionX'] },
-          { id: `${props.id}-wrapperBlock0`, value: -15, type: 'x' },
-        ],
-      } : null;
+      delay: 1000,
+      minMove: 0.1,
+      data: [
+        { id: 'bg$0', value: 15, bgPosition: '50%', type: ['backgroundPositionX'] },
+        { id: `${props.id}-wrapperBlock0`, value: -15, type: 'x' },
+      ],
+    } : null;
     const childrenToRender = (<Element
       key="0"
       prefixCls="banner-user-elem"
@@ -49,26 +49,26 @@ class Banner2 extends React.Component {
         key="text"
         id={`${props.id}-wrapperBlock0`}
       >
-          <span
-            className="logo"
-            key="logo"
-            id={`${props.id}-titleBlock0`}
-          >
-            遊戲金鏈
+        <span
+          className="logo"
+          key="logo"
+          id={`${props.id}-titleBlock0`}
+        >
+          遊戲金鏈
           </span>
         <p
           key="content"
           id={`${props.id}-contentBlock0`}
         >
-         作為價值互聯網的宣導者和建設者，百穀王推出Gamegold遊戲金公鏈平臺，直擊行業痛點，賦能動漫遊戲產業，與友商共建通證經濟。
+          作為價值互聯網的宣導者和建設者，百穀王推出Gamegold遊戲金公鏈平臺，直擊行業痛點，賦能動漫遊戲產業，與友商共建通證經濟。
          </p>
         <Button
           type="ghost"
           key="button"
           id={`${props.id}-buttonBlock0`}
         >
-          <a href="http://www.gamegold.xin/cpjs.html"> 產品介紹
-          </a> 
+          <a href="http://www.gamegold.xin/app/gamegold.apk"> 產品下載
+          </a>
         </Button>
       </QueueAnim>
     </Element>);
