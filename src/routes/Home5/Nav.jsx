@@ -61,7 +61,7 @@ class Header extends React.Component {
           className={`${this.props.className}-phone-nav-text`}
         >
           <Menu
-            defaultSelectedKeys={['2']}
+            defaultSelectedKeys={['3']}
             mode="inline"
             theme="dark"
           >
@@ -73,7 +73,7 @@ class Header extends React.Component {
         animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
       >
         <Menu
-          mode="horizontal" defaultSelectedKeys={['2']}
+          mode="horizontal" defaultSelectedKeys={['3']}
           id={`${this.props.id}-menu`}
         >
           {navChildren}

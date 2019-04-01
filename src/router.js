@@ -4,6 +4,7 @@ import HomePage from './routes/Home';
 import Home2Page from './routes/Home2';
 import Home3Page from './routes/Home3';
 import Home4Page from './routes/Home4';
+import Home5Page from './routes/Home5';
 
 import EnPage from './routes/En';
 import En2Page from './routes/En2';
@@ -27,6 +28,7 @@ function RouterConfig({ history }) {
         <Route path="/Home2" exact component={Home2Page} />
         <Route path="/Home3" exact component={Home3Page} />
         <Route path="/Home4" exact component={Home4Page} />
+        <Route path="/Home5" exact component={Home5Page} />
 
         <Route path="/En" exact component={EnPage} />
         <Route path="/En2" exact component={En2Page} />
