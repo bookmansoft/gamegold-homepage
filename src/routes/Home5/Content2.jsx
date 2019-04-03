@@ -34,7 +34,7 @@ class Content extends React.Component {
             resetStyle
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/cpjs1.jpg" />
+              <img width="100%" src="http://www.gamegold.xin/imgs/cpjs3.png" />
             </span>
           </TweenOne>
           <QueueAnim
@@ -46,10 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              Gamegold钱包 APP、小程序
+              区块链浏览器
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              客户端为用户提供数字资产管理功能，用户可以进行链上道具管理（赠送、买卖、熔铸、竞拍）、Gamegold管理，参与游戏众筹；同时可对喜爱的游戏进行点评，查看游戏榜单，参与游戏社区讨论等。
+              查阅所有游戏金交易与区块的相关详情，实时同步更新游戏金链所有节点信息。
             </p>
           </QueueAnim>
         </OverPack>

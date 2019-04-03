@@ -5,6 +5,8 @@ import { enquireScreen } from 'enquire-js';
 
 import Nav from './Nav';
 import Content0 from './Content0';
+import Content1 from './Content1';
+import Content2 from './Content2';
 import Footer from './Footer';
 
 import './less/antMotion_style.less';
@@ -50,7 +52,9 @@ export default class Home extends React.Component {
   render() {
     const children = [
       <Nav id="nav_0_0" key="nav_0_0" isMobile={this.state.isMobile}/>,
-      <Content0 id="content_8_0" key="content_8_0" isMobile={this.state.isMobile}/>,
+      <Content0 id="content_2_0" key="content_2_0" isMobile={this.state.isMobile}/>,
+      <Content1 id="content_7_0" key="content_7_0" isMobile={this.state.isMobile}/>,
+      <Content2 id="content_2_1" key="content_2_1" isMobile={this.state.isMobile}/>,
       <Footer id="footer_1_0" key="footer_1_0" isMobile={this.state.isMobile}/>,
     ];
     return (
