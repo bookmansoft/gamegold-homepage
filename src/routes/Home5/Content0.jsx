@@ -50,7 +50,7 @@ class Content extends React.Component {
               Vallnet 游戏孵化器
             </h1>
             <p key="p" id={`${props.id}-content`}>
-            Vallnet孵化品由福州百谷王网络科技有限公司建设，于2018年9月20日开业，为创业者提供孵化加速服务，打造立体化全要素孵化加速器。
+            Vallnet孵化器由福州百谷王网络科技有限公司建设，于2018年9月20日开业，为创业者提供孵化加速服务，打造立体化全要素孵化加速器。
             
             <br /><br />
               <a href="http://www.gamegold.xin/imgs/vallnet.zip">入驻申请表格下载</a>
