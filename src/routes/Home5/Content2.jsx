@@ -33,8 +33,8 @@ class Content extends React.Component {
             id={`${props.id}-imgWrapper`}
             resetStyle
           >
-            <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/zc3.jpg" />
+            <span id={`${props.id}-img`} style={{marginBottom:'50px'}}>
+              <img width="120%" src="http://www.gamegold.xin/imgs/zc3.jpg" />
             </span>
           </TweenOne>
           <QueueAnim

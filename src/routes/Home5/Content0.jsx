@@ -33,8 +33,9 @@ class Content extends React.Component {
             id={`${props.id}-imgWrapper`}
             resetStyle
           >
-            <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/zc1.jpg" />
+            <br /><br /><br /><br /><br /><br />
+            <span id={`${props.id}-img`} style={{marginTop:'50px'}}>
+              <img width="150%" src="http://www.gamegold.xin/imgs/zc1.jpg" />
             </span>
           </TweenOne>
           <QueueAnim
@@ -50,7 +51,12 @@ class Content extends React.Component {
             </h1>
             <p key="p" id={`${props.id}-content`}>
             Vallnet孵化品由福州百谷王网络科技有限公司建设，于2018年9月20日开业，为创业者提供孵化加速服务，打造立体化全要素孵化加速器。
+            
+            <br /><br />
+              <a href="http://www.gamegold.xin/imgs/vallnet.zip">入驻申请表格下载</a>
+
             </p>
+            
           </QueueAnim>
         </OverPack>
       </div>

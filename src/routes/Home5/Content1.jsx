@@ -81,7 +81,7 @@ class Content extends React.Component {
             id={`${props.id}-img`}
             resetStyle
           >
-            <img width="100%" src="http://www.gamegold.xin/imgs/zc2.jpg" />
+            <img width="75%" src="http://www.gamegold.xin/imgs/zc2.jpg" />
           </TweenOne>
         </OverPack>
       </div>
