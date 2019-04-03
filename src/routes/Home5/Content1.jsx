@@ -32,9 +32,7 @@ class Content extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     const dataSource = [
-      { img: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '道具上链与投放', content: '企业可在后台管理系统中操作道具的生成、投放、赠送、发布售卖等，利用道具的流转获取更多的客源。' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '数据统计与分析', content: '在后台管理系统中能轻松筛查运营数据，便于企业对生态中的用户进行精准营销，节约营销成本，提高效率。' },
-      { img: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '用户管理', content: '查看用户使用产品情况，便于制定更合理的营销方案' },
+      
     ];
     const ulChildren = dataSource.map(this.getBlockChildren);
     delete props.isMobile;
@@ -59,13 +57,13 @@ class Content extends React.Component {
               key="h1"
               id={`${props.id}-title`}
             >
-              企业管理后台
+              空间介绍
             </h1>
             <p
               key="p"
               id={`${props.id}-content`}
             >
-              合作企业管理业务的强大帮手
+              Vallnet孵化器拥有总建筑面积600平方米，总工位30个。具备设施有：办公区、会议室、休闲区、路演区、展示区、活动室。
             </p>
             <QueueAnim
               component="ul"
@@ -83,7 +81,7 @@ class Content extends React.Component {
             id={`${props.id}-img`}
             resetStyle
           >
-            <img width="100%" src="http://www.gamegold.xin/imgs/cpjs2.png" />
+            <img width="100%" src="http://www.gamegold.xin/imgs/zc2.jpg" />
           </TweenOne>
         </OverPack>
       </div>

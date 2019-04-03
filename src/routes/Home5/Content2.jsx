@@ -34,7 +34,7 @@ class Content extends React.Component {
             resetStyle
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/cpjs3.png" />
+              <img width="100%" src="http://www.gamegold.xin/imgs/zc3.jpg" />
             </span>
           </TweenOne>
           <QueueAnim
@@ -46,10 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              区块链浏览器
+              运营支撑
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              查阅所有游戏金交易与区块的相关详情，实时同步更新游戏金链所有节点信息。
+              提供创业团队辅导、商业模式辅导、融资对接服务。提供工商注册绿色通道。免费提供创业培训、创业政策咨询及科技信息查询服务，快速办理公司注册、政策办理指导服务、法律咨询服务。
             </p>
           </QueueAnim>
         </OverPack>

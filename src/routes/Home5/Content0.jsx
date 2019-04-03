@@ -34,7 +34,7 @@ class Content extends React.Component {
             resetStyle
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src="http://www.gamegold.xin/imgs/cpjs1.jpg" />
+              <img width="100%" src="http://www.gamegold.xin/imgs/zc1.jpg" />
             </span>
           </TweenOne>
           <QueueAnim
@@ -46,10 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              Gamegold钱包 APP、小程序
+              Vallnet 游戏孵化器
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              客户端为用户提供数字资产管理功能，用户可以进行链上道具管理（赠送、买卖、熔铸、竞拍）、Gamegold管理，参与游戏众筹；同时可对喜爱的游戏进行点评，查看游戏榜单，参与游戏社区讨论等。
+            Vallnet孵化品由福州百谷王网络科技有限公司建设，于2018年9月20日开业，为创业者提供孵化加速服务，打造立体化全要素孵化加速器。
             </p>
           </QueueAnim>
         </OverPack>
