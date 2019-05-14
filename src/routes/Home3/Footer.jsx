@@ -66,7 +66,8 @@ class Footer extends React.Component {
         id={`${props.id}-content`}
       >
         <span>
-          Copyright © 2018 The Project by <a href="http://www.gamegold.xin/">Gamegold</a>. All Rights Reserved
+          Copyright © 2018 The Project by <a href="http://www.gamegold.xin/">Gamegold</a>. All Rights Reserved<br />
+          闽ICP备18022181号
         </span>
       </TweenOne>
     </OverPack>);
