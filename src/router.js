@@ -22,7 +22,7 @@ function RouterConfig({ history }) {
   return (
     <Router history={history}>
       <Switch>
-        <Route path="/" exact component={EnPage} />
+        <Route path="/" exact component={HomePage} />
 
         <Route path="/Home" exact component={HomePage} />
         <Route path="/Home2" exact component={Home2Page} />
