@@ -42,7 +42,7 @@ class Footer extends React.Component {
     const dataSource = [
       { title: '产品', content: '产品介绍\n\n', contentLink: '/#/Home2' },
       { title: '关于', content: '联系我们', contentLink: '/#/Home4' },
-      { title: '资源', content: 'App下载\n代码仓库\n区块浏览器', contentLink: 'http://www.gamegold.xin/app/gamegold.apk\nhttps://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
+      { title: '资源', content: '代码仓库\n区块浏览器', contentLink: 'https://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
       { title: '关注', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
@@ -67,7 +67,7 @@ class Footer extends React.Component {
       >
         <span>
           Copyright © 2018 The Project by <a href="http://www.gamegold.xin/">Gamegold</a>. All Rights Reserved<br />
-          闽ICP备18022181号
+          闽B2-20190516 闽网文（2019）0058-002号
         </span>
       </TweenOne>
     </OverPack>);

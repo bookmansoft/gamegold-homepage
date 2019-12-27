@@ -45,11 +45,9 @@ class Content extends React.Component {
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
-            <h1 key="h1" id={`${props.id}-title`}>
-              Gamegold钱包 APP、小程序
-            </h1>
+            <h1 key="h1" id={`${props.id}-title`}>数字资产管家</h1>
             <p key="p" id={`${props.id}-content`}>
-              客户端为用户提供数字资产管理功能，用户可以进行链上道具管理（赠送、买卖、熔铸、竞拍）、Gamegold管理，参与游戏众筹；同时可对喜爱的游戏进行点评，查看游戏榜单，参与游戏社区讨论等。
+              为用户提供数字资产管理功能，用户可以进行链上道具管理（赠送、买卖、熔铸、竞拍）。
             </p>
           </QueueAnim>
         </OverPack>

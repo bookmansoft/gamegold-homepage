@@ -45,12 +45,8 @@ class Content extends React.Component {
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
-            <h1 key="h1" id={`${props.id}-title`}>
-              降低游戏厂商获客成本
-            </h1>
-            <p key="p" id={`${props.id}-content`}>
-              与广泛领域的合作伙伴共建、共享持久、稳定的次生态社群，大幅降低游戏行业获客成本，用创意赚钱而不是用流量赚钱。
-            </p>
+            <h1 key="h1" id={`${props.id}-title`}>代表应用：流量联盟</h1>
+            <p key="p" id={`${props.id}-content`}>与广泛领域的合作伙伴共建、共享持久、稳定的次生态社群，大幅降低游戏行业获客成本，用创意赚钱而不是用流量赚钱。</p>
           </QueueAnim>
         </OverPack>
       </div>

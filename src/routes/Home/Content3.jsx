@@ -46,10 +46,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              开放的区块链应用解决方案赋能传统行业
+              更多区块链应用解决方案
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              百谷王为传统行业提供一站式区块链应用解决方案，通过区块链技术为传统产业赋能，带动游戏、动漫、图书、人力资源等产业结构优化，助力区域经济转型、产业升级。
+              为传统行业提供一站式区块链应用解决方案，通过区块链技术为传统产业赋能，带动游戏、动漫、图书、人力资源等产业结构优化，助力区域经济转型、产业升级。
             </p>
           </QueueAnim>
         </OverPack>

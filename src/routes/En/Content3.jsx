@@ -49,7 +49,7 @@ class Content extends React.Component {
               Enables Traditional Industries
             </h1>
             <p key="p" id={`${props.id}-content`}>
-               Baiguwang provides one-stop block chain application solutions for traditional industries, empowers traditional industries through block chain technology, promotes industrial structure optimization of games, animation, books and human resources, and helps regional economic transformation and industrial upgrading.
+               Vallnet provides one-stop block chain application solutions for traditional industries, empowers traditional industries through block chain technology, promotes industrial structure optimization of games, animation, books and human resources, and helps regional economic transformation and industrial upgrading.
             </p>
           </QueueAnim>
         </OverPack>
