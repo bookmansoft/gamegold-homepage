@@ -42,7 +42,7 @@ class Footer extends React.Component {
     const dataSource = [
       { title: 'Product', content: 'Product introduction\n\n', contentLink: '/#/En2' },
       { title: 'About', content: 'Contact us', contentLink: '/#/En4' },
-      { title: 'Resources', content: 'Code Warehouse\nBlock Chain Browser', contentLink: 'https://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
+      { title: 'Resources', content: 'Code Warehouse', contentLink: 'https://github.com/bookmansoft' },
       { title: 'Community', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
