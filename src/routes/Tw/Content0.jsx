@@ -60,16 +60,8 @@ class Banner2 extends React.Component {
           key="content"
           id={`${props.id}-contentBlock0`}
         >
-          作為價值互聯網的宣導者和建設者，百穀王推出Gamegold遊戲金公鏈平臺，直擊行業痛點，賦能動漫遊戲產業，與友商共建通證經濟。
+          作為價值互聯網的宣導者，百穀王推出遊戲金鏈，直擊行業痛點，與友商共建通證經濟。
          </p>
-        <Button
-          type="ghost"
-          key="button"
-          id={`${props.id}-buttonBlock0`}
-        >
-          <a href="http://www.gamegold.xin/app/gamegold.apk"> 產品下載
-          </a>
-        </Button>
       </QueueAnim>
     </Element>);
 

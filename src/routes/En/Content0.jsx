@@ -59,16 +59,8 @@ class Banner2 extends React.Component {
           id={`${props.id}-contentBlock0`}
 
         >
-          As an advocate and builder of the value internet, Baiguwang launched the Golden Chain Platform of Game, directly attacking the pain points of the industry, enabling the animation and game industry, and building a passport economy with friends and businessmen.
+          As an advocate and builder of the value internet, Vallnet building a passport economy with friends and businessmen.
         </p>
-        <Button
-          type="ghost"
-          key="button"
-          id={`${props.id}-buttonBlock0`}
-        >
-          <a href="http://www.gamegold.xin/app/gamegold.apk">  Product download
-          </a>
-        </Button>
       </QueueAnim>
     </Element>);
 

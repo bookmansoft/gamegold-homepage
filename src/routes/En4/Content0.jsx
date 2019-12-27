@@ -72,16 +72,13 @@ class Content extends React.Component {
       {
         tag: { tag: 'Company profile', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
         img: <img width="100%" src="http://www.gamegold.xin/imgs/lxwm1.png" />,
-        text: `Fuzhou Baiguwang Network Technology Co., Ltd. (hereinafter referred to as Baiguwang Technology) was founded in 2018, is a start-up enterprise, registered capital of 10 million yuan.
-        Baiguwang Technology's Game Golden Gold Chain is an open game ecological platform and virtual prop management solution tailored to the specific needs of the game industry with block chains as the underlying technology.
-        Global game sales revenue in 2018 has exceeded $140 billion. Game virtual asset stock management is a huge market of over trillion RMB. Baiguwang Technology is the pioneer of game virtual asset management, and strives to become a leading manufacturer in this field within two years.`,
-        // Since its establishment, the company advocates knowledge and respects talents, gathers a large number of elites in the industry. The core members are from the top management team of listed game companies. 
-        // The company focuses on the bottom technology of the block chain. Our advantage is that first, we have a deep understanding of the game industry, and have mature solutions for the pain points of the game industry. Secondly, we have a bottom public chain structure developed independently. And it's tailored to the game industry.
+        text: `Fuzhou Vallnet Network Technology Co., Ltd. (hereinafter referred to as Vallnet Technology) was founded in 2018, is a start-up enterprise, registered capital of 10 million yuan.
+        Vallnet Technology is the pioneer of virtual asset management, and strives to become a leading manufacturer in this field within two years.`,
       },
       {
         tag: { tag: 'Contact us', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
         img: <img width="100%" src="http://www.gamegold.xin/imgs/zichan_en.jpg" />,
-        text: `<h3>Company Address: 23rd Floor, Libao Tianma Square, No. 1 Wuyi North Road, Gulou District, Fuzhou City</h3><h3>Telephone：0591-87553093</h3><h3>Email：2257032171@qq.com</h3><h3>WeChat Subscription：</h3><img class="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
+        text: `<h3>Company Address: 7# 15rd Floor, HaiXia Square, Software Park, Gulou District, Fuzhou City</h3><h3>Telephone：0591-87553093</h3><h3>Email：2257032171@qq.com</h3><h3>WeChat Subscription：</h3><img class="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
       }
     ];
     const tabsChildren = childrenData.map(this.getBlockChildren);

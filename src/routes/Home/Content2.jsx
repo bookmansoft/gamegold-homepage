@@ -35,11 +35,9 @@ class Content extends React.Component {
             ease={['easeOutCubic', 'easeInCubic']}
             id={`${props.id}-textWrapper`}
           >
-            <h1 key="h1" id={`${props.id}-title`}>
-              用户自己的数字资产管家
-            </h1>
+            <h1 key="h1" id={`${props.id}-title`}>代表应用：数字资产管家</h1>
             <p key="p" id={`${props.id}-content`}>
-              作为上万亿规模的游戏资产管理领域的拓荒者，希望和友商一起，深耕这片蓝海市场，引领游戏行业重回尊重客户、尊重创新的健康有序的发展轨道。
+              进军上万亿规模的游戏资产管理领域、蓝海市场，数字资产管家将引领游戏行业重回尊重客户、尊重创新的健康有序的发展轨道。
             </p>
           </QueueAnim>
           <TweenOne

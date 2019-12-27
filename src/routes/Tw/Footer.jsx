@@ -42,7 +42,7 @@ class Footer extends React.Component {
     const dataSource = [
       { title: '產品', content: '產品介紹\n\n', contentLink: '/#/Tw2' },
       { title: '關於', content: '聯繫我們', contentLink: '/#/Tw4' },
-      { title: '資源;', content: 'App下載\n程式碼倉庫\n區塊瀏覽器', contentLink: 'http://www.gamegold.xin/app/gamegold.apk\nhttps://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
+      { title: '資源;', content: '程式碼倉庫\n區塊瀏覽器', contentLink: 'https://github.com/bookmansoft\nhttp://blockchain.gamegold.xin:8100/' },
       { title: '關注', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
