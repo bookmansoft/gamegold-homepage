@@ -41,8 +41,7 @@ class Footer extends React.Component {
     const logoContent = { img: 'http://www.gamegold.xin/imgs/Logo_name02.png', content: '福州百谷王网络科技有限公司' };
     const dataSource = [
       { title: '产品', content: '产品介绍\n\n', contentLink: '/#/Home2' },
-      { title: '关于', content: '联系我们', contentLink: '/#/Home4' },
-      { title: '资源', content: '代码仓库', contentLink: 'https://github.com/bookmansoft' },
+      { title: '关于', content: '联系我们', contentLink: '/#/Home4' },     
       { title: '关注', content: 'https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg', contentLink: 'https://github.com/bookmansoft' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
@@ -67,7 +66,7 @@ class Footer extends React.Component {
       >
         <span>
           Copyright © 2018 The Project by <a href="http://www.gamegold.xin/">Gamegold</a>. All Rights Reserved<br />
-          闽B2-20190516 闽网文（2019）0058-002号
+          闽B2-20190516 闽网文（2019）0058-002号 闽ICP备 18022181 号
         </span>
       </TweenOne>
     </OverPack>);
