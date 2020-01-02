@@ -66,9 +66,16 @@ class Footer extends React.Component {
       >
         <span>
           Copyright © 2018 The Project by <a href="http://www.gamegold.xin/">Gamegold</a>. All Rights Reserved<br />
-          闽B2-20190516 闽网文（2019）0058-002号 闽ICP备 18022181 号
+          闽B2-20190516 | 闽网文（2019）0058-002号 | 闽ICP备18022181号
         </span>
-      </TweenOne>
+        <div style= {{width:'300px',margin:'0 auto', padding:'20px 0'}} >
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35010202001028" 
+             style={{display:'inline-block',textDecoration:'none',height:'20px',lineHeight:'20px'}}>
+            <img src="https://static.122.gov.cn/V1.16.0/static/img/batb.png" style={{float:'left'}}/>
+            <p style={{float:'left',height:'20px',lineHeight:'20px',margin:'0px 0px 0px 5px',color:'#939393'}}>闽公网安备 35010202001028号</p >
+          </a>
+        </div>      
+      </TweenOne>      
     </OverPack>);
   }
 }
