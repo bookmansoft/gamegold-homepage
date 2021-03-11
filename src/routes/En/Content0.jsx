@@ -73,6 +73,7 @@ class Banner2 extends React.Component {
           enter={{ opacity: 0, type: 'from' }}
           leave={{ opacity: 0 }}
           component=""
+          style={{ fill: 'none'} }
         >
           <BannerAnim
             key="banner"

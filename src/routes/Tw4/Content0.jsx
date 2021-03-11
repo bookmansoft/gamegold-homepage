@@ -80,7 +80,7 @@ class Content extends React.Component {
       {
         tag: { tag: '聯繫我們', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
         img: <img width="100%" src="http://www.gamegold.xin/imgs/zichan_tw.jpg" />,
-        text: `<h3>公司地址：福州市鼓樓區五一北路1號力寶天馬廣場23樓</h3><h3>電話：0591-87553093</h3><h3>郵箱：2257032171@qq.com</h3><h3>公眾號：</h3><img class="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
+        text: `<h3>公司地址：福州市鼓樓區五一北路1號力寶天馬廣場23樓</h3><h3>電話：0591-87553093</h3><h3>郵箱：2257032171@qq.com</h3><h3>公眾號：</h3><img className="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
       }
     ];
     const tabsChildren = childrenData.map(this.getBlockChildren);

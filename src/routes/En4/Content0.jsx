@@ -78,7 +78,7 @@ class Content extends React.Component {
       {
         tag: { tag: 'Contact us', icon: 'https://zos.alipayobjects.com/rmsportal/XnzcslQvRoBHMHd.svg' },
         img: <img width="100%" src="http://www.gamegold.xin/imgs/zichan_en.jpg" />,
-        text: `<h3>Company Address: 7# 15rd Floor, HaiXia Square, Software Park, Gulou District, Fuzhou City</h3><h3>Telephone：0591-87553093</h3><h3>Email：2257032171@qq.com</h3><h3>WeChat Subscription：</h3><img class="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
+        text: `<h3>Company Address: 7# 15rd Floor, HaiXia Square, Software Park, Gulou District, Fuzhou City</h3><h3>Telephone：0591-87553093</h3><h3>Email：2257032171@qq.com</h3><h3>WeChat Subscription：</h3><img className="weixin" src="http://www.gamegold.xin/imgs/weixin.png">`,
       }
     ];
     const tabsChildren = childrenData.map(this.getBlockChildren);

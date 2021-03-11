@@ -41,7 +41,7 @@ class Header extends React.Component {
         animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
         id={`${this.props.id}-logo`}
       >
-        <img width="100%" class="logo" src="http://www.gamegold.xin/imgs/Logo_name01.png" />
+        <img width="100%" className="logo" src="http://www.gamegold.xin/imgs/Logo_name01.png" />
       </TweenOne>
       {isMobile ? (<div
         className={`${this.props.className}-phone-nav${this.state.phoneOpen ? ' open' : ''}`}

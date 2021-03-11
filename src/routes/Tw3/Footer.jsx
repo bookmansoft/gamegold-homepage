@@ -64,6 +64,7 @@ class Footer extends React.Component {
         key="copyright"
         className="copyright"
         id={`${props.id}-content`}
+        style={{ opacity: 0 }}
       >
         <span>
           Copyright © 2018 The Project by <a href="http://www.gamegold.xin/">Gamegold</a>. All Rights Reserved

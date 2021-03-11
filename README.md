@@ -26,3 +26,8 @@
 
 0.7.8 例子请切回 [master](https://github.com/ant-motion/ant-motion-dva-cli-example/tree/master)
 
+
+4. bug fix( 启动页面console报错问题- Uncaught TypeError: Cannot read property 'filter' of undefined -- StylePlugin.js?170b:285 )
+
+经查,应该是rc-tween-one在2.2.22版本后,强制需要每个<TweenOne>元素都必须有个sytle属性,如果没有,就会报错.因此修改了rc-tween-one的版本号解决.
+
